@@ -1,10 +1,12 @@
-<ActionBar class="action-bar">
+<ActionBar class="action-bar" androidElevation="0">
   <!--
     Use the NavigationButton as a side-drawer button in Android
     because ActionItems are shown on the right side of the ActionBar
     -->
   <NavigationButton
-    icon="res://ic_menu_black_24dp"
+    class="navigation-button"
+    ios:visibility="collapsed"
+    icon="res://menu"
     (tap)="onDrawerButtonTap()"
   ></NavigationButton>
   <!--
@@ -19,13 +21,9 @@
     ios.position="left"
   >
   </ActionItem>
-  <Label class="action-bar-title" text="Home"></Label>
+  <Label class="action-bar-title" text="PHCC CONFERENCE"></Label>
 </ActionBar>
 
 <GridLayout class="page page-content">
-  <Label class="page-icon fa" text="&#xf015;"></Label>
-  <Label
-    class="page-placeholder"
-    text="<!-- Page content goes here -->"
-  ></Label>
+  <Label class="page-placeholder" text="PHCC Conferene Dashboard"></Label>
 </GridLayout>

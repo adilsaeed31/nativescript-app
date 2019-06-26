@@ -12,31 +12,26 @@
     vertical-align: center;
     horizontal-align: center;
   }
-
-  .page-icon {
-    font-size: 72;
-    vertical-align: top;
-    horizontal-align: center;
-    color: $page-icon-color;
-    margin-top: 20%;
-  }
 }
 
 //Action bar
 .action-bar {
   background: white;
+  padding: 15px;
+  .navigation-button {
+    vertical-align: center;
+    horizontal-align: center;
+  }
   .action-bar-title {
     font-family: "Exo-Bold";
-    color: black;
+    color: #4a4a4a;
     font-weight: bold;
     horizontal-align: left;
+    margin-left: 72px;
   }
 }
 
 // Drawer navigation custom styles
-$sidedrawer-header-image-size: 100%;
-$sidedrawer-header-image-offset-top: 0;
-$sidedrawer-header-image-offset-bottom: 0;
 $sidedrawer-list-item-offset-left: 15;
 $sidedrawer-list-icon-offset: 10;
 $sidedrawer-list-icon-size: 20;
@@ -46,15 +41,6 @@ $sidedrawer-list-icon-size: 20;
     background-color: $background-light;
     font-family: "Exo-Regular";
     color: $primary;
-    .sidedrawer-header-image {
-      color: $background-dark;
-      height: $sidedrawer-header-image-size;
-      width: $sidedrawer-header-image-size;
-      font-size: $sidedrawer-header-image-size;
-      padding: 0;
-      margin-bottom: $sidedrawer-header-image-offset-bottom;
-      margin-top: $sidedrawer-header-image-offset-top;
-    }
 
     .footnote {
       color: rgba($ab-color, 0.5);
@@ -62,7 +48,6 @@ $sidedrawer-list-icon-size: 20;
   }
 
   .sidedrawer-header {
-    padding: 0;
     .sidedrawer-header-info {
       margin-bottom: 20;
     }
