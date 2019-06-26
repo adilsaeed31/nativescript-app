@@ -10,7 +10,7 @@ https://docs.nativescript.org/angular/ui/professional-ui-components/ng-SideDrawe
         <Label
           class="h2"
           text="4TH INTERNATIONAL PRIMARY HEALTH CARE CONFERENCE QATAR 2020"
-          wrapText="true"
+          textWrap="true"
         ></Label>
         <Label
           class="sidedrawer-header-brand"
@@ -75,9 +75,6 @@ https://docs.nativescript.org/angular/ui/professional-ui-components/ng-SideDrawe
       </StackLayout>
     </ScrollView>
   </GridLayout>
-
-  <page-router-outlet
-    tkMainContent
-    class="page page-content"
-  ></page-router-outlet>
+  <page-router-outlet tkMainContent class="page page-content">
+  </page-router-outlet>
 </RadSideDrawer>

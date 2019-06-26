@@ -6,6 +6,7 @@
 }
 // Common page class
 .page-content {
+  margin-top: 20px;
   .page-placeholder {
     color: $page-icon-color;
     font-size: $page-content-placeholder-font-size;
@@ -18,6 +19,7 @@
 .action-bar {
   background: white;
   padding: 15px;
+  margin-top: 62px;
   .navigation-button {
     vertical-align: center;
     horizontal-align: center;

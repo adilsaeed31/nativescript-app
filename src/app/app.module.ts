@@ -4,7 +4,7 @@ import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angul
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-
+import { HeaderComponent } from "./shared/ui/header.component";
 @NgModule({
     bootstrap: [AppComponent],
     imports: [
@@ -12,7 +12,7 @@ import { AppComponent } from "./app.component";
         NativeScriptModule,
         NativeScriptUISideDrawerModule
     ],
-    declarations: [AppComponent],
+    declarations: [AppComponent, HeaderComponent],
     schemas: [NO_ERRORS_SCHEMA]
 })
 export class AppModule {}
