@@ -40,23 +40,28 @@ $sidedrawer-list-icon-size: 20;
 
 .sidedrawer {
   &.sidedrawer-left {
-    background-color: $background-light;
+    background-color: white;
     font-family: "Exo-Regular";
-    color: $primary;
-
-    .footnote {
-      color: rgba($ab-color, 0.5);
-    }
+    color: #000000;
   }
 
   .sidedrawer-header {
+    height: 18%;
+    background: linear-gradient(to right, #65b91c, #468312);
+    color: white;
     .sidedrawer-header-info {
-      margin-bottom: 20;
+      color: white;
+      .sidedrawer-header-text {
+        font-weight: bold;
+        font-family: "Exo-Bold";
+        font-size: 20px;
+      }
     }
     .sidedrawer-header-brand {
-      color: $primary;
-      font-family: "Exo-Medium";
-      font-weight: bold;
+      margin-top: 50px;
+      font-family: "Exo-Regular";
+      color: white;
+      font-size: 14px;
     }
   }
 
