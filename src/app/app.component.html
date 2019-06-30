@@ -4,74 +4,167 @@ Learn more about the RadSideDrawer UI component and how it can be customized in 
 https://docs.nativescript.org/angular/ui/professional-ui-components/ng-SideDrawer/getting-started
 -->
 <RadSideDrawer [drawerTransition]="sideDrawerTransition">
-  <GridLayout tkDrawerContent rows="auto, *" class="sidedrawer sidedrawer-left">
-    <StackLayout row="0" class="sidedrawer-header m-t-30">
-      <StackLayout class="sidedrawer-header-info">
+  <GridLayout tkDrawerContent rows="auto, *" class="sidedrawer">
+    <StackLayout row="0" class="sidedrawer-header p-l-20 p-b-10" height="200">
+      <GridLayout rows="auto, *">
         <Label
-          class="sidedrawer-header-text"
+          row="0"
+          class="sidedrawer-header-title m-t-30"
           text="4TH INTERNATIONAL PRIMARY HEALTH CARE CONFERENCE QATAR 2020"
           textWrap="true"
         ></Label>
         <Label
-          class="sidedrawer-header-brand"
+          row="1"
+          class="sidedrawer-header-text"
           text="Welcome Muhammad Adil Saeed"
           textWrap="true"
         ></Label>
-      </StackLayout>
+      </GridLayout>
     </StackLayout>
 
     <ScrollView row="1" class="sidedrawer-content">
       <StackLayout>
         <GridLayout
-          columns="auto, *"
+          columns="20, auto, *"
           class="sidedrawer-list-item"
           [class.selected]="isComponentSelected('/home')"
           (tap)="onNavItemTap('/home')"
         >
-          <Label col="0" text="&#xf015;" class="fa"></Label>
-          <Label col="1" text="Home" class="p-r-10"></Label>
+          <Image
+            col="0"
+            src="~/images/drawer-icon-home.png"
+            stretch="none"
+            class="drawer-icons"
+          ></Image>
+          <Label col="1" text="HOME" class="p-r-10 m-l-30"></Label>
         </GridLayout>
 
         <GridLayout
-          columns="auto, *"
+          columns="20, auto, *"
           class="sidedrawer-list-item"
-          [class.selected]="isComponentSelected('/browse')"
-          (tap)="onNavItemTap('/browse')"
+          [class.selected]="isComponentSelected('/speakers')"
+          (tap)="onNavItemTap('/speakers')"
         >
-          <Label col="0" text="&#xf1ea;" class="fa"></Label>
-          <Label col="1" text="Browse" class="p-r-10"></Label>
+          <Image
+            col="0"
+            src="~/images/drawer-icon-speakers.png"
+            stretch="none"
+            class="drawer-icons"
+          ></Image>
+          <Label col="1" text="SPEAKERS" class="p-r-10 m-l-30"></Label>
         </GridLayout>
 
         <GridLayout
-          columns="auto, *"
+          columns="20, auto, *"
           class="sidedrawer-list-item"
-          [class.selected]="isComponentSelected('/search')"
-          (tap)="onNavItemTap('/search')"
+          [class.selected]="isComponentSelected('/schedule')"
+          (tap)="onNavItemTap('/schedule')"
         >
-          <Label col="0" text="&#xf002;" class="fa"></Label>
-          <Label col="1" text="Search" class="p-r-10"></Label>
+          <Image
+            col="0"
+            src="~/images/drawer-icon-schedule.png"
+            stretch="none"
+            class="drawer-icons"
+          ></Image>
+          <Label col="1" text="SCHEDULE" class="p-r-10 m-l-30"></Label>
         </GridLayout>
 
         <GridLayout
-          columns="auto, *"
+          columns="20, auto, *"
           class="sidedrawer-list-item"
-          [class.selected]="isComponentSelected('/featured')"
-          (tap)="onNavItemTap('/featured')"
+          [class.selected]="isComponentSelected('/venue')"
+          (tap)="onNavItemTap('/venue')"
         >
-          <Label col="0" text="&#xf005;" class="fa"></Label>
-          <Label col="1" text="Featured" class="p-r-10"></Label>
+          <Image
+            col="0"
+            src="~/images/drawer-icon-venue.png"
+            stretch="none"
+            class="drawer-icons"
+          ></Image>
+          <Label col="1" text="VENUE" class="p-r-10 m-l-30"></Label>
         </GridLayout>
 
-        <StackLayout class="hr-light"></StackLayout>
+        <GridLayout
+          columns="20, auto, *"
+          class="sidedrawer-list-item"
+          [class.selected]="isComponentSelected('/workshop')"
+          (tap)="onNavItemTap('/workshop')"
+        >
+          <Image
+            col="0"
+            src="~/images/drawer-icon-workshop.png"
+            stretch="none"
+            class="drawer-icons"
+          ></Image>
+          <Label col="1" text="WORKSHOP" class="p-r-10 m-l-30"></Label>
+        </GridLayout>
 
         <GridLayout
-          columns="auto, *"
+          columns="20, auto, *"
           class="sidedrawer-list-item"
-          [class.selected]="isComponentSelected('/settings')"
-          (tap)="onNavItemTap('/settings')"
+          [class.selected]="isComponentSelected('/poster')"
+          (tap)="onNavItemTap('/poster')"
         >
-          <Label col="0" text="&#xf013;" class="fa"></Label>
-          <Label col="1" text="Settings" class="p-r-10"></Label>
+          <Image
+            col="0"
+            src="~/images/drawer-icon-poster.png"
+            stretch="none"
+            class="drawer-icons"
+          ></Image>
+          <Label
+            col="1"
+            text="POSTER PRESENTATION"
+            class="p-r-10 m-l-30"
+          ></Label>
+        </GridLayout>
+
+        <GridLayout
+          columns="20, auto, *"
+          class="sidedrawer-list-item"
+          [class.selected]="isComponentSelected('/sponsor')"
+          (tap)="onNavItemTap('/sponsor')"
+        >
+          <Image
+            col="0"
+            src="~/images/drawer-icon-sponsor.png"
+            stretch="none"
+            class="drawer-icons"
+          ></Image>
+          <Label
+            col="1"
+            text="SPONSOR & PARTNERS"
+            class="p-r-10 m-l-30"
+          ></Label>
+        </GridLayout>
+
+        <GridLayout
+          columns="20, auto, *"
+          class="sidedrawer-list-item"
+          [class.selected]="isComponentSelected('/exhibitors')"
+          (tap)="onNavItemTap('/exhibitors')"
+        >
+          <Image
+            col="0"
+            src="~/images/drawer-icon-home.png"
+            stretch="none"
+            class="drawer-icons"
+          ></Image>
+          <Label col="1" text="EXHIBITORS" class="p-r-10 m-l-30"></Label>
+        </GridLayout>
+
+        <GridLayout
+          columns="20, auto, *"
+          class="sidedrawer-list-item"
+          [class.selected]="isComponentSelected('/about')"
+          (tap)="onNavItemTap('/about')"
+        >
+          <Image
+            col="0"
+            src="~/images/drawer-icon-about.png"
+            stretch="none"
+            class="drawer-icons"
+          ></Image>
+          <Label col="1" text="About" class="p-r-10 m-l-30"></Label>
         </GridLayout>
       </StackLayout>
     </ScrollView>

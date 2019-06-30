@@ -7,12 +7,6 @@
 // Common page class
 .page-content {
   margin-top: 20px;
-  .page-placeholder {
-    color: $page-icon-color;
-    font-size: $page-content-placeholder-font-size;
-    vertical-align: center;
-    horizontal-align: center;
-  }
 }
 
 //Action bar
@@ -39,54 +33,57 @@ $sidedrawer-list-icon-offset: 10;
 $sidedrawer-list-icon-size: 20;
 
 .sidedrawer {
-  &.sidedrawer-left {
-    background-color: white;
-    font-family: "Exo-Regular";
-    color: #000000;
-  }
-
   .sidedrawer-header {
-    height: 18%;
+    padding-top: 60px;
     background: linear-gradient(to right, #65b91c, #468312);
     color: white;
-    .sidedrawer-header-info {
-      color: white;
-      .sidedrawer-header-text {
-        font-weight: bold;
-        font-family: "Exo-Bold";
-        font-size: 20px;
-      }
+
+    .sidedrawer-header-title {
+      font-weight: bold;
+      font-family: "Exo-Bold";
+      font-size: 20px;
     }
-    .sidedrawer-header-brand {
-      margin-top: 50px;
+
+    .sidedrawer-header-text {
       font-family: "Exo-Regular";
       color: white;
       font-size: 14px;
+      vertical-align: bottom;
     }
   }
 
   .sidedrawer-content {
     background-color: $side-drawer-background;
 
-    $sidedrawer-list-item-offset-left: 15;
+    $sidedrawer-list-item-offset-left: 16;
     $sidedrawer-list-icon-offset: 10;
     $sidedrawer-list-icon-size: 20;
 
     .sidedrawer-list-item {
       padding-left: $sidedrawer-list-item-offset-left;
+      vertical-align: center;
+      horizontal-align: center;
       label {
         vertical-align: center;
-        color: $blue-dark;
+        color: #000000;
+        font-family: "Exo-Regular";
       }
       .fa {
         width: $sidedrawer-list-icon-size;
         margin-right: $sidedrawer-list-icon-offset;
       }
       &.selected {
+        font-family: "Exo-Bold";
         background-color: $item-active-background;
         label {
-          color: $item-active-color;
+          color: #000000;
+          font-weight: bold;
+          font-family: "Exo-Bold";
         }
+      }
+      .drawer-icons {
+        vertical-align: center;
+        horizontal-align: center;
       }
     }
   }

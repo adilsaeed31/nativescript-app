@@ -5,15 +5,37 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 const routes: Routes = [
     { path: "", redirectTo: "/home", pathMatch: "full" },
     { path: "home", loadChildren: "~/app/home/home.module#HomeModule" },
-    { path: "browse", loadChildren: "~/app/browse/browse.module#BrowseModule" },
-    { path: "search", loadChildren: "~/app/search/search.module#SearchModule" },
     {
-        path: "featured",
-        loadChildren: "~/app/featured/featured.module#FeaturedModule"
+        path: "speakers",
+        loadChildren: "~/app/speakers/speakers.module#SpeakersModule"
     },
     {
-        path: "settings",
-        loadChildren: "~/app/settings/settings.module#SettingsModule"
+        path: "schedule",
+        loadChildren: "~/app/schedule/schedule.module#ScheduleModule"
+    },
+    {
+        path: "venue",
+        loadChildren: "~/app/venue/venue.module#VenueModule"
+    },
+    {
+        path: "workshop",
+        loadChildren: "~/app/workshop/workshop.module#WorkshopModule"
+    },
+    {
+        path: "poster",
+        loadChildren: "~/app/poster/poster.module#PosterModule"
+    },
+    {
+        path: "sponsor",
+        loadChildren: "~/app/sponsor/sponsor.module#SponsorModule"
+    },
+    {
+        path: "exhibitors",
+        loadChildren: "~/app/exhibitors/exhibitors.module#ExhibitorsModule"
+    },
+    {
+        path: "about",
+        loadChildren: "~/app/about/about.module#AboutModule"
     }
 ];
 

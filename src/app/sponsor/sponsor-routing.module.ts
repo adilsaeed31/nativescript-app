@@ -2,14 +2,12 @@ import { NgModule } from "@angular/core";
 import { Routes } from "@angular/router";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 
-import { BrowseComponent } from "./browse.component";
+import { SponsorComponent } from "./sponsor.component";
 
-const routes: Routes = [
-    { path: "", component: BrowseComponent }
-];
+const routes: Routes = [{ path: "", component: SponsorComponent }];
 
 @NgModule({
     imports: [NativeScriptRouterModule.forChild(routes)],
     exports: [NativeScriptRouterModule]
 })
-export class BrowseRoutingModule { }
+export class SponsorRoutingModule {}
