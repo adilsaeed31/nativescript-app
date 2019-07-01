@@ -6,24 +6,20 @@
 }
 // Common page class
 .page-content {
-  margin-top: 20px;
+  padding: 20px;
 }
 
 //Action bar
 .action-bar {
+  margin-top: 30px;
   background: white;
-  padding: 15px;
-  margin-top: 62px;
-  .navigation-button {
-    vertical-align: center;
-    horizontal-align: center;
-  }
+  vertical-align: center;
   .action-bar-title {
     font-family: "Exo-Bold";
     color: #4a4a4a;
     font-weight: bold;
+    padding-left: 36px;
     horizontal-align: left;
-    margin-left: 72px;
   }
 }
 
@@ -33,7 +29,7 @@ $sidedrawer-list-icon-offset: 10;
 $sidedrawer-list-icon-size: 20;
 
 .sidedrawer {
-  .sidedrawer-header {
+  .sidedrawer-header-custom {
     padding-top: 60px;
     background: linear-gradient(to right, #65b91c, #468312);
     color: white;
@@ -62,11 +58,12 @@ $sidedrawer-list-icon-size: 20;
     .sidedrawer-list-item {
       padding-left: $sidedrawer-list-item-offset-left;
       vertical-align: center;
-      horizontal-align: center;
       label {
         vertical-align: center;
         color: #000000;
+        font-weight: bold;
         font-family: "Exo-Regular";
+        font-size: 14px;
       }
       .fa {
         width: $sidedrawer-list-icon-size;
@@ -84,7 +81,62 @@ $sidedrawer-list-icon-size: 20;
       .drawer-icons {
         vertical-align: center;
         horizontal-align: center;
+        transform: scale(1.3);
       }
     }
   }
+}
+
+// Home Dashboard custom sytles
+.home-grid {
+  .label-speaker-name {
+    font-family: "Exo-Regular";
+    font-size: 14px;
+  }
+  .label-speaker-profession {
+    font-family: "Exo-Regular";
+    font-size: 10px;
+  }
+  .label-grid {
+    margin: 5px;
+    padding: 30px;
+    color: white;
+    font-family: "Exo-Bold";
+    font-size: 15px;
+    border-width: 1px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .label-image {
+    width: 200px;
+  }
+  .keynote-bg {
+    background-color: #4b1c1f;
+  }
+  .schedule-bg {
+    background: #002c58;
+    background-image: url("~/images/schedule-bg.png") no-repeat center;
+  }
+  .venue-bg {
+    background: #09274a;
+  }
+  .workshop-bg {
+    background: #65b91c;
+  }
+  .poster-bg {
+    background: #2f8b4f;
+  }
+  .about-bg {
+    background: #003a5f;
+  }
+  .exhibitors-bg {
+    background: #ff8105;
+  }
+  .phcc-bg {
+    background: gray;
+  }
+}
+
+.label-center {
+  vertical-align: center;
 }

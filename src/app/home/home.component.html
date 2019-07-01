@@ -1,19 +1,10 @@
 <ActionBar class="action-bar" androidElevation="0">
-  <!--
-      Use the NavigationButton as a side-drawer button in Android
-      because ActionItems are shown on the right side of the ActionBar
-      -->
   <NavigationButton
-    class="navigation-button"
     ios:visibility="collapsed"
     icon="res://menu_black"
     (tap)="onDrawerButtonTap()"
   ></NavigationButton>
-  <!--
-      Use the ActionItem for IOS with position set to left. Using the
-      NavigationButton as a side-drawer button in iOS is not possible,
-      because its function is to always navigate back in the application.
-      -->
+
   <ActionItem
     icon="res://navigation/menu"
     android:visibility="collapsed"
@@ -24,4 +15,83 @@
   <Label class="action-bar-title" text="PHCC CONFERENCE"></Label>
 </ActionBar>
 
-<GridLayout class="page page-content"> </GridLayout>
+<StackLayout class="page-content">
+  <GridLayout rows="auto,*,*,*,*" columns="*,*" class="home-grid">
+    <StackLayout row="0" col="0" colSpan="2" class="label-grid keynote-bg">
+      <GridLayout
+        rows="auto, auto, auto, auto"
+        columns="*,*"
+        class="label-center"
+      >
+        <Label
+          class="pull-left m-b-10"
+          row="0"
+          col="0"
+          colSpan="2"
+          text="KEYNOTES"
+        ></Label>
+        <Image
+          class="label-image"
+          row="1"
+          col="0"
+          src="~/images/girl1.png"
+        ></Image>
+        <Label
+          class="label-speaker-name m-t-10"
+          row="2"
+          col="0"
+          textWrap="true"
+          text="Sian M. Griffiths"
+        ></Label>
+        <Label
+          class="label-speaker-profession"
+          row="3"
+          col="0"
+          textWrap="true"
+          text="Professor"
+        ></Label>
+        <Image
+          class="label-image thumb img-circle"
+          row="1"
+          col="1"
+          src="~/images/girl2.png"
+        ></Image>
+        <Label
+          class="label-speaker-name m-t-10"
+          row="2"
+          col="1"
+          textWrap="true"
+          text="Allyson Pollock"
+        ></Label>
+        <Label
+          class="label-speaker-profession"
+          row="3"
+          col="1"
+          textWrap="true"
+          text="Doctor"
+        ></Label>
+      </GridLayout>
+    </StackLayout>
+    <StackLayout class="label-grid schedule-bg" row="1" col="0">
+      <Label text="SCHEDULE"></Label>
+    </StackLayout>
+    <StackLayout class="label-grid venue-bg" row="1" col="1">
+      <Label text="VENUE"></Label>
+    </StackLayout>
+    <StackLayout class="label-grid workshop-bg" row="2" col="0">
+      <Label text="WORKSHOP"></Label>
+    </StackLayout>
+    <StackLayout class="label-grid poster-bg" row="2" col="1">
+      <Label text="POSTER PRESENTATION" textWrap="true"></Label>
+    </StackLayout>
+    <StackLayout class="label-grid exhibitors-bg" row="3" col="0">
+      <Label text="EXHIBITORS"></Label>
+    </StackLayout>
+    <StackLayout class="label-grid about-bg" row="3" col="1">
+      <Label text="ABOUT"></Label>
+    </StackLayout>
+    <StackLayout class="label-grid phcc-bg" row="4" col="0" colSpan="2">
+      <Label text="PHCC"></Label>
+    </StackLayout>
+  </GridLayout>
+</StackLayout>
