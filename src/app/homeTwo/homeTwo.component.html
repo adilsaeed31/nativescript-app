@@ -1,36 +1,36 @@
-<pc-header-bar title="PHCC Conference - Home 2"></pc-header-bar>
+<pc-header-bar title="PHCC Conference"></pc-header-bar>
 
 <StackLayout class="page-content">
   <GridLayout rows="auto,*,*,auto" columns="*,*" class="home-grid">
     <StackLayout row="0" col="0" colSpan="2" class="label-grid">
-      <pc-keynotes-grid></pc-keynotes-grid
-    ></StackLayout>
+      <pc-keynotes-grid></pc-keynotes-grid>
+    </StackLayout>
 
     <StackLayout
-      class="label-grid schedule-bg"
+      class="label-grid grid-radius schedule-bg"
       row="1"
       col="0"
       (tap)="onNavItemTap('/schedule')"
     >
-      <GridLayout rows="*, *" class="label-grid-inside">
+      <GridLayout rows="auto,auto" class="label-grid-inside">
         <Image
           row="0"
-          column="0"
-          class="label-center label-icons m-t-30"
+          col="0"
+          class="label-center label-icons m-t-120"
           src="~/images/schedule-white.png"
           stretch="none"
         ></Image>
         <Label
           row="1"
-          column="0"
-          class="label-title label-center"
+          col="0"
+          class="label-title label-center m-t-30"
           text="SCHEDULE"
         ></Label>
       </GridLayout>
     </StackLayout>
 
     <StackLayout
-      class="label-grid venue-bg"
+      class="label-grid grid-radius venue-bg"
       row="1"
       col="1"
       (tap)="onNavItemTap('/venue')"
@@ -38,7 +38,7 @@
       <GridLayout rows="auto,auto,*" class="label-grid-inside">
         <Image
           row="0"
-          column="0"
+          col="0"
           class="label-center label-icons m-t-120"
           src="~/images/venue-white.png"
           stretch="none"
@@ -46,13 +46,13 @@
 
         <Label
           row="1"
-          column="0"
+          col="0"
           class="label-title label-center m-t-30"
           text="VENUE"
         ></Label>
         <Label
           row="2"
-          column="0"
+          col="0"
           class="label-title-desc"
           text="Ritz Carlton Doha"
         ></Label>
@@ -60,7 +60,7 @@
     </StackLayout>
 
     <StackLayout
-      class="label-grid workshop-bg"
+      class="label-grid grid-radius workshop-bg"
       row="2"
       col="0"
       (tap)="onNavItemTap('/workshop')"
@@ -68,7 +68,7 @@
       <GridLayout rows="auto, auto, auto" class="label-grid-inside">
         <Image
           row="0"
-          column="0"
+          col="0"
           class="label-center label-icons m-t-120"
           src="~/images/workshop-white.png"
           stretch="none"
@@ -76,14 +76,14 @@
 
         <Label
           row="1"
-          column="0"
+          col="0"
           class="label-title label-center m-t-30"
           text="WORKSHOP"
         ></Label>
 
         <StackLayout
           row="2"
-          column="0"
+          col="0"
           orientation="horizontal"
           class="label-stack-center"
         >
@@ -94,7 +94,7 @@
     </StackLayout>
 
     <StackLayout
-      class="label-grid poster-bg"
+      class="label-grid grid-radius poster-bg"
       row="2"
       col="1"
       (tap)="onNavItemTap('/poster')"
@@ -102,14 +102,14 @@
       <GridLayout rows="auto,auto" class="label-grid-inside">
         <Image
           row="0"
-          column="0"
+          col="0"
           class="label-center label-icons m-t-120"
           src="~/images/poster-white.png"
           stretch="none"
         ></Image>
         <Label
           row="1"
-          column="0"
+          col="0"
           class="label-title label-center m-t-10 label-extra-padding"
           text="POSTER PRESENTATION"
           textWrap="true"
@@ -118,7 +118,7 @@
     </StackLayout>
 
     <StackLayout
-      class="label-grid exhibitors-bg"
+      class="label-grid grid-radius exhibitors-bg"
       row="3"
       col="0"
       (tap)="onNavItemTap('/exhibitors')"
@@ -126,14 +126,14 @@
       <GridLayout rows="auto, auto" class="label-grid-inside">
         <Image
           row="0"
-          column="0"
+          col="0"
           class="label-center label-icons m-t-60"
           src="~/images/exhibitors-white.png"
           stretch="none"
         ></Image>
         <Label
           row="1"
-          column="0"
+          col="0"
           class="label-title label-center m-t-20 m-b-20"
           text="EXHIBITORS"
         ></Label>
@@ -141,7 +141,7 @@
     </StackLayout>
 
     <StackLayout
-      class="label-grid about-bg"
+      class="label-grid grid-radius about-bg"
       row="3"
       col="1"
       (tap)="onNavItemTap('/about')"
@@ -149,14 +149,14 @@
       <GridLayout rows="auto,auto" class="label-grid-inside">
         <Image
           row="0"
-          column="0"
+          col="0"
           class="label-center label-icons m-t-60"
           src="~/images/about-white.png"
           stretch="none"
         ></Image>
         <Label
           row="1"
-          column="0"
+          col="0"
           class="label-title label-center m-t-20 m-b-20"
           text="ABOUT"
         ></Label>

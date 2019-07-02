@@ -1,4 +1,4 @@
-<ActionBar class="action-bar" androidElevation="0">
+<ActionBar class="action-bar action-bar-white-bg  p-t-30" androidElevation="0">
   <NavigationButton
     ios:visibility="collapsed"
     icon="res://menu_black"
@@ -12,5 +12,8 @@
     ios.position="left"
   >
   </ActionItem>
-  <Label class="action-bar-title" [text]="headerTitle"></Label>
+  <Label
+    class="action-bar-title action-bar-title-normal"
+    [text]="headerTitle"
+  ></Label>
 </ActionBar>

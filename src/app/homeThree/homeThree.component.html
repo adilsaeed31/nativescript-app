@@ -1,4 +1,4 @@
-<ActionBar class="action-bar-h3" androidElevation="0">
+<ActionBar class="action-bar action-bar-green-bg p-t-30" androidElevation="0">
   <NavigationButton
     ios:visibility="collapsed"
     icon="res://menu_white"
@@ -12,7 +12,178 @@
     ios.position="left"
   >
   </ActionItem>
-  <Label class="action-bar-title" text="PHCC Conference - Home Green"></Label>
+  <Label
+    class="action-bar-title action-bar-title-white"
+    text="PHCC Conference"
+  ></Label>
 </ActionBar>
 
-<StackLayout class="phcg-page-content"> </StackLayout>
+<StackLayout class="phcg-page-content">
+  <GridLayout rows="auto, *,*,*" columns="*,*" class="home-grid">
+    <StackLayout
+      row="0"
+      col="0"
+      colSpan="2"
+      class="home-three-slider m-l-15 m-r-15 m-b-90 m-t-30"
+    >
+      <Image src="~/images/phcc2.png"></Image>
+    </StackLayout>
+
+    <StackLayout
+      class="label-grid white-opacity-bg"
+      row="1"
+      col="0"
+      (tap)="onNavItemTap('/speakers')"
+    >
+      <GridLayout rows="*, *" class="label-grid-inside">
+        <Image
+          row="0"
+          col="0"
+          class="label-center label-icons m-t-30"
+          src="~/images/poster-white.png"
+          stretch="none"
+        ></Image>
+        <Label
+          row="1"
+          col="0"
+          class="label-title label-center"
+          text="SPEAKERS"
+        ></Label>
+      </GridLayout>
+    </StackLayout>
+
+    <StackLayout
+      class="label-grid white-opacity-bg"
+      row="1"
+      col="1"
+      (tap)="onNavItemTap('/schedule')"
+    >
+      <GridLayout rows="*, *" class="label-grid-inside">
+        <Image
+          row="0"
+          col="0"
+          class="label-center label-icons m-t-30"
+          src="~/images/schedule-white.png"
+          stretch="none"
+        ></Image>
+        <Label
+          row="1"
+          col="0"
+          class="label-title label-center"
+          text="SCHEDULE"
+        ></Label>
+      </GridLayout>
+    </StackLayout>
+
+    <StackLayout
+      class="label-grid white-opacity-bg"
+      row="2"
+      col="0"
+      (tap)="onNavItemTap('/venue')"
+    >
+      <GridLayout rows="auto,auto,*" class="label-grid-inside">
+        <Image
+          row="0"
+          col="0"
+          class="label-center label-icons m-t-120"
+          src="~/images/venue-white.png"
+          stretch="none"
+        ></Image>
+
+        <Label
+          row="1"
+          col="0"
+          class="label-title label-center m-t-30"
+          text="VENUE"
+        ></Label>
+        <Label
+          row="2"
+          col="0"
+          class="label-title-desc"
+          text="Ritz Carlton Doha"
+        ></Label>
+      </GridLayout>
+    </StackLayout>
+
+    <StackLayout
+      class="label-grid white-opacity-bg"
+      row="2"
+      col="1"
+      (tap)="onNavItemTap('/workshop')"
+    >
+      <GridLayout rows="auto,auto,auto" class="label-grid-inside">
+        <Image
+          row="0"
+          col="0"
+          class="label-center label-icons m-t-120"
+          src="~/images/workshop-white.png"
+          stretch="none"
+        ></Image>
+
+        <Label
+          row="1"
+          col="0"
+          class="label-title label-center m-t-30"
+          text="WORKSHOP"
+        ></Label>
+
+        <StackLayout
+          row="2"
+          col="0"
+          orientation="horizontal"
+          class="label-stack-center"
+        >
+          <Label class="label-title-desc-bold" text="3&nbsp;"></Label>
+          <Label class="label-title-desc" text="Workshop"></Label>
+        </StackLayout>
+      </GridLayout>
+    </StackLayout>
+
+    <StackLayout
+      class="label-grid white-opacity-bg"
+      row="3"
+      col="0"
+      (tap)="onNavItemTap('/poster')"
+    >
+      <GridLayout rows="auto,auto" class="label-grid-inside">
+        <Image
+          row="0"
+          col="0"
+          class="label-center label-icons m-t-120"
+          src="~/images/poster-white.png"
+          stretch="none"
+        ></Image>
+        <Label
+          row="1"
+          col="0"
+          class="label-title label-center m-t-10 label-extra-padding"
+          text="POSTER PRESENTATION"
+          textWrap="true"
+        ></Label>
+      </GridLayout>
+    </StackLayout>
+
+    <StackLayout
+      class="label-grid white-opacity-bg"
+      row="3"
+      col="1"
+      (tap)="onNavItemTap('/about')"
+    >
+      <GridLayout rows="auto,auto" class="label-grid-inside">
+        <Image
+          row="0"
+          column="0"
+          class="label-center label-icons m-t-120"
+          src="~/images/about-white.png"
+          stretch="none"
+        ></Image>
+        <Label
+          row="1"
+          column="0"
+          class="label-title label-center m-t-30"
+          text="ABOUT"
+        ></Label>
+      </GridLayout>
+    </StackLayout>
+  </GridLayout>
+</StackLayout>

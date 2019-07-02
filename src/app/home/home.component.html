@@ -7,30 +7,30 @@
     </StackLayout>
 
     <StackLayout
-      class="label-grid schedule-bg"
+      class="label-grid grid-radius schedule-bg"
       row="1"
       col="0"
       (tap)="onNavItemTap('/schedule')"
     >
-      <GridLayout rows="*, *" class="label-grid-inside">
+      <GridLayout rows="auto, auto" class="label-grid-inside">
         <Image
           row="0"
           col="0"
-          class="label-center label-icons m-t-30"
+          class="label-center label-icons m-t-120"
           src="~/images/schedule-white.png"
           stretch="none"
         ></Image>
         <Label
           row="1"
           col="0"
-          class="label-title label-center"
+          class="label-title label-center m-t-30"
           text="SCHEDULE"
         ></Label>
       </GridLayout>
     </StackLayout>
 
     <StackLayout
-      class="label-grid venue-bg"
+      class="label-grid grid-radius venue-bg"
       row="1"
       col="1"
       (tap)="onNavItemTap('/venue')"
@@ -60,7 +60,7 @@
     </StackLayout>
 
     <StackLayout
-      class="label-grid workshop-bg"
+      class="label-grid grid-radius workshop-bg"
       row="2"
       col="0"
       (tap)="onNavItemTap('/workshop')"
@@ -94,7 +94,7 @@
     </StackLayout>
 
     <StackLayout
-      class="label-grid poster-bg"
+      class="label-grid grid-radius poster-bg"
       row="2"
       col="1"
       (tap)="onNavItemTap('/poster')"
@@ -118,7 +118,7 @@
     </StackLayout>
 
     <StackLayout
-      class="label-grid phcc-bg"
+      class="label-grid grid-radius phcc-bg"
       row="4"
       col="0"
       colSpan="2"
