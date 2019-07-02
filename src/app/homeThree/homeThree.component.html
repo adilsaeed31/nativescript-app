@@ -1,7 +1,7 @@
-<ActionBar class="action-bar" androidElevation="0">
+<ActionBar class="action-bar-h3" androidElevation="0">
   <NavigationButton
     ios:visibility="collapsed"
-    icon="res://menu_black"
+    icon="res://menu_white"
     (tap)="onDrawerButtonTap()"
   ></NavigationButton>
 
@@ -12,5 +12,7 @@
     ios.position="left"
   >
   </ActionItem>
-  <Label class="action-bar-title" [text]="headerTitle"></Label>
+  <Label class="action-bar-title" text="PHCC Conference - Home Green"></Label>
 </ActionBar>
+
+<StackLayout class="phcg-page-content"> </StackLayout>

@@ -1,10 +1,10 @@
-<pc-header-bar title="PHCC Conference"></pc-header-bar>
+<pc-header-bar title="PHCC Conference - Home 2"></pc-header-bar>
 
 <StackLayout class="page-content">
-  <GridLayout rows="auto,*,*,*" columns="*,*" class="home-grid">
+  <GridLayout rows="auto,*,*,auto" columns="*,*" class="home-grid">
     <StackLayout row="0" col="0" colSpan="2" class="label-grid">
-      <pc-keynotes-grid></pc-keynotes-grid>
-    </StackLayout>
+      <pc-keynotes-grid></pc-keynotes-grid
+    ></StackLayout>
 
     <StackLayout
       class="label-grid schedule-bg"
@@ -15,14 +15,14 @@
       <GridLayout rows="*, *" class="label-grid-inside">
         <Image
           row="0"
-          col="0"
+          column="0"
           class="label-center label-icons m-t-30"
           src="~/images/schedule-white.png"
           stretch="none"
         ></Image>
         <Label
           row="1"
-          col="0"
+          column="0"
           class="label-title label-center"
           text="SCHEDULE"
         ></Label>
@@ -38,7 +38,7 @@
       <GridLayout rows="auto,auto,*" class="label-grid-inside">
         <Image
           row="0"
-          col="0"
+          column="0"
           class="label-center label-icons m-t-120"
           src="~/images/venue-white.png"
           stretch="none"
@@ -46,13 +46,13 @@
 
         <Label
           row="1"
-          col="0"
+          column="0"
           class="label-title label-center m-t-30"
           text="VENUE"
         ></Label>
         <Label
           row="2"
-          col="0"
+          column="0"
           class="label-title-desc"
           text="Ritz Carlton Doha"
         ></Label>
@@ -65,10 +65,10 @@
       col="0"
       (tap)="onNavItemTap('/workshop')"
     >
-      <GridLayout rows="auto,auto,auto" class="label-grid-inside">
+      <GridLayout rows="auto, auto, auto" class="label-grid-inside">
         <Image
           row="0"
-          col="0"
+          column="0"
           class="label-center label-icons m-t-120"
           src="~/images/workshop-white.png"
           stretch="none"
@@ -76,14 +76,14 @@
 
         <Label
           row="1"
-          col="0"
+          column="0"
           class="label-title label-center m-t-30"
           text="WORKSHOP"
         ></Label>
 
         <StackLayout
           row="2"
-          col="0"
+          column="0"
           orientation="horizontal"
           class="label-stack-center"
         >
@@ -102,14 +102,14 @@
       <GridLayout rows="auto,auto" class="label-grid-inside">
         <Image
           row="0"
-          col="0"
+          column="0"
           class="label-center label-icons m-t-120"
           src="~/images/poster-white.png"
           stretch="none"
         ></Image>
         <Label
           row="1"
-          col="0"
+          column="0"
           class="label-title label-center m-t-10 label-extra-padding"
           text="POSTER PRESENTATION"
           textWrap="true"
@@ -118,15 +118,48 @@
     </StackLayout>
 
     <StackLayout
-      class="label-grid phcc-bg"
-      row="4"
+      class="label-grid exhibitors-bg"
+      row="3"
       col="0"
-      colSpan="2"
+      (tap)="onNavItemTap('/exhibitors')"
+    >
+      <GridLayout rows="auto, auto" class="label-grid-inside">
+        <Image
+          row="0"
+          column="0"
+          class="label-center label-icons m-t-60"
+          src="~/images/exhibitors-white.png"
+          stretch="none"
+        ></Image>
+        <Label
+          row="1"
+          column="0"
+          class="label-title label-center m-t-20 m-b-20"
+          text="EXHIBITORS"
+        ></Label>
+      </GridLayout>
+    </StackLayout>
+
+    <StackLayout
+      class="label-grid about-bg"
+      row="3"
+      col="1"
       (tap)="onNavItemTap('/about')"
     >
-      <GridLayout rows="*" columns="*,*">
-        <Image class="m-5" row="0" col="0" src="~/images/phcc1.png"></Image>
-        <Image class="m-5" row="0" col="1" src="~/images/phcc2.png"></Image>
+      <GridLayout rows="auto,auto" class="label-grid-inside">
+        <Image
+          row="0"
+          column="0"
+          class="label-center label-icons m-t-60"
+          src="~/images/about-white.png"
+          stretch="none"
+        ></Image>
+        <Label
+          row="1"
+          column="0"
+          class="label-title label-center m-t-20 m-b-20"
+          text="ABOUT"
+        ></Label>
       </GridLayout>
     </StackLayout>
   </GridLayout>

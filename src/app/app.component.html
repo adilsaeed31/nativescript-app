@@ -42,6 +42,36 @@ https://docs.nativescript.org/angular/ui/professional-ui-components/ng-SideDrawe
         <GridLayout
           columns="25, auto"
           class="sidedrawer-list-item"
+          [class.selected]="isComponentSelected('/hometwo')"
+          (tap)="onNavItemTap('/hometwo')"
+        >
+          <Image
+            col="0"
+            src="~/images/drawer-icon-home.png"
+            stretch="none"
+            class="drawer-icons"
+          ></Image>
+          <Label col="1" text="HOME 2" class="p-r-10 m-l-30"></Label>
+        </GridLayout>
+
+        <GridLayout
+          columns="25, auto"
+          class="sidedrawer-list-item"
+          [class.selected]="isComponentSelected('/homethree')"
+          (tap)="onNavItemTap('/homethree')"
+        >
+          <Image
+            col="0"
+            src="~/images/drawer-icon-home.png"
+            stretch="none"
+            class="drawer-icons"
+          ></Image>
+          <Label col="1" text="HOME 3" class="p-r-10 m-l-30"></Label>
+        </GridLayout>
+
+        <GridLayout
+          columns="25, auto"
+          class="sidedrawer-list-item"
           [class.selected]="isComponentSelected('/speakers')"
           (tap)="onNavItemTap('/speakers')"
         >

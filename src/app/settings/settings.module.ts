@@ -3,17 +3,11 @@ import { NativeScriptCommonModule } from "nativescript-angular/common";
 
 import { SettingsRoutingModule } from "./settings-routing.module";
 import { SettingsComponent } from "./settings.component";
+import { HeaderModule } from "../shared/ui/header.module";
 
 @NgModule({
-    imports: [
-        NativeScriptCommonModule,
-        SettingsRoutingModule
-    ],
-    declarations: [
-        SettingsComponent
-    ],
-    schemas: [
-        NO_ERRORS_SCHEMA
-    ]
+    imports: [NativeScriptCommonModule, SettingsRoutingModule, HeaderModule],
+    declarations: [SettingsComponent],
+    schemas: [NO_ERRORS_SCHEMA]
 })
-export class SettingsModule { }
+export class SettingsModule {}

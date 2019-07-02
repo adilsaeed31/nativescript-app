@@ -6,11 +6,11 @@ import { RouterExtensions } from "nativescript-angular/router";
 import * as app from "tns-core-modules/application";
 
 @Component({
-    selector: "Home",
+    selector: "HomeTwo",
     moduleId: module.id,
-    templateUrl: "./home.component.html"
+    templateUrl: "./homeTwo.component.html"
 })
-export class HomeComponent implements OnInit {
+export class HomeTwoComponent implements OnInit {
     constructor(
         private router: Router,
         private routerExtensions: RouterExtensions

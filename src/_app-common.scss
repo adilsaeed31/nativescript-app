@@ -99,7 +99,6 @@ $sidedrawer-list-icon-size: 20;
   }
   .label-grid {
     margin: 5px;
-    padding: 30px;
     color: white;
     font-family: "Exo-Bold";
     font-size: 15px;
@@ -107,18 +106,53 @@ $sidedrawer-list-icon-size: 20;
     border-radius: 10px;
     text-align: center;
   }
+  .label-grid-inside {
+    padding: 30px;
+  }
+  .label-extra-padding {
+    padding: 60px;
+  }
   .label-image {
     width: 200px;
   }
+  .label-icons {
+    transform: scale(2);
+  }
+  .label-title {
+    font-size: 15px;
+    font-family: "Exo-Bold";
+  }
+  .label-title-desc {
+    font-size: 11px;
+    font-family: "Exo-Thin";
+  }
+  .label-title-desc-bold {
+    font-family: "Exo-Regular";
+    font-size: 11px;
+  }
+  .label-stack-center {
+    horizontal-align: center;
+  }
   .keynote-bg {
-    background-color: #4b1c1f;
+    background-color: #003a5f;
+    background-image: url("~/images/keynotes-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
   }
   .schedule-bg {
     background: #002c58;
-    background-image: url("~/images/schedule-bg.png") no-repeat center;
+    background-image: url("~/images/schedule-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
   }
   .venue-bg {
     background: #09274a;
+    background-image: url("~/images/venue-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
   }
   .workshop-bg {
     background: #65b91c;
@@ -133,10 +167,47 @@ $sidedrawer-list-icon-size: 20;
     background: #ff8105;
   }
   .phcc-bg {
-    background: gray;
+    background: #ebeef2;
   }
 }
 
 .label-center {
   vertical-align: center;
+  horizontal-align: center;
+}
+
+// Utitilites CSS Style
+
+.m-t-40 {
+  margin-top: 40px;
+}
+.m-t-50 {
+  margin-top: 50px;
+}
+.m-t-60 {
+  margin-top: 60px;
+}
+.m-t-120 {
+  margin-top: 120px;
+}
+
+// HomePage 3 Design Stylesheet
+.phcg-page-content {
+  font-family: "Exo-Regular";
+  color: white;
+  background: linear-gradient(to bottom, #5cae21, #357a3a, #093c5f);
+}
+
+.action-bar-h3 {
+  padding-top: 30px;
+  background-color: #5cae21;
+  vertical-align: center;
+  .action-bar-title {
+    font-family: "Exo-Bold";
+    color: white;
+    font-weight: bold;
+    padding-left: 36px;
+    font-size: 20px;
+    horizontal-align: left;
+  }
 }

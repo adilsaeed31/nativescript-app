@@ -2,15 +2,14 @@ import { Component, OnInit } from "@angular/core";
 import { RadSideDrawer } from "nativescript-ui-sidedrawer";
 import { Router } from "@angular/router";
 import { RouterExtensions } from "nativescript-angular/router";
-
 import * as app from "tns-core-modules/application";
 
 @Component({
-    selector: "Home",
+    selector: "HomeThree",
     moduleId: module.id,
-    templateUrl: "./home.component.html"
+    templateUrl: "./homeThree.component.html"
 })
-export class HomeComponent implements OnInit {
+export class HomeThreeComponent implements OnInit {
     constructor(
         private router: Router,
         private routerExtensions: RouterExtensions
