@@ -1,10 +1,19 @@
-<ActionBar class="action-bar action-bar-white-bg  p-t-30" androidElevation="0">
+<ActionBar
+  class="action-bar action-bar-white-bg  p-t-30"
+  androidElevation="0"
+  (loaded)="onLoadedActionBar()"
+>
   <NavigationButton
     ios:visibility="collapsed"
     icon="res://menu_black"
     (tap)="onDrawerButtonTap()"
   ></NavigationButton>
-
+  <NavigationButton
+    text="Back"
+    android.systemIcon="ic_menu_back"
+    [nsLinkRouter]="['/home']"
+  >
+  </NavigationButton>
   <ActionItem
     icon="res://navigation/menu"
     android:visibility="collapsed"

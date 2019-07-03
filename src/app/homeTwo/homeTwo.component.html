@@ -10,7 +10,7 @@
       class="label-grid grid-radius schedule-bg"
       row="1"
       col="0"
-      (tap)="onNavItemTap('/schedule')"
+      [nsRouterLink]="['/schedule']"
     >
       <GridLayout rows="auto,auto" class="label-grid-inside">
         <Image
@@ -33,7 +33,7 @@
       class="label-grid grid-radius venue-bg"
       row="1"
       col="1"
-      (tap)="onNavItemTap('/venue')"
+      [nsRouterLink]="['/venue']"
     >
       <GridLayout rows="auto,auto,*" class="label-grid-inside">
         <Image
@@ -63,7 +63,7 @@
       class="label-grid grid-radius workshop-bg"
       row="2"
       col="0"
-      (tap)="onNavItemTap('/workshop')"
+      [nsRouterLink]="['/workshop']"
     >
       <GridLayout rows="auto, auto, auto" class="label-grid-inside">
         <Image
@@ -97,7 +97,7 @@
       class="label-grid grid-radius poster-bg"
       row="2"
       col="1"
-      (tap)="onNavItemTap('/poster')"
+      [nsRouterLink]="['/poster']"
     >
       <GridLayout rows="auto,auto" class="label-grid-inside">
         <Image
@@ -121,7 +121,7 @@
       class="label-grid grid-radius exhibitors-bg"
       row="3"
       col="0"
-      (tap)="onNavItemTap('/exhibitors')"
+      [nsRouterLink]="['/exhibitors']"
     >
       <GridLayout rows="auto, auto" class="label-grid-inside">
         <Image
@@ -144,7 +144,7 @@
       class="label-grid grid-radius about-bg"
       row="3"
       col="1"
-      (tap)="onNavItemTap('/about')"
+      [nsRouterLink]="['/about']"
     >
       <GridLayout rows="auto,auto" class="label-grid-inside">
         <Image

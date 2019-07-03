@@ -33,7 +33,7 @@
       class="label-grid white-opacity-bg"
       row="1"
       col="0"
-      (tap)="onNavItemTap('/speakers')"
+      [nsRouterLink]="['/speakers']"
     >
       <GridLayout rows="*, *" class="label-grid-inside">
         <Image
@@ -56,7 +56,7 @@
       class="label-grid white-opacity-bg"
       row="1"
       col="1"
-      (tap)="onNavItemTap('/schedule')"
+      [nsRouterLink]="['/schedule']"
     >
       <GridLayout rows="*, *" class="label-grid-inside">
         <Image
@@ -79,7 +79,7 @@
       class="label-grid white-opacity-bg"
       row="2"
       col="0"
-      (tap)="onNavItemTap('/venue')"
+      [nsRouterLink]="['/venue']"
     >
       <GridLayout rows="auto,auto,*" class="label-grid-inside">
         <Image
@@ -109,7 +109,7 @@
       class="label-grid white-opacity-bg"
       row="2"
       col="1"
-      (tap)="onNavItemTap('/workshop')"
+      [nsRouterLink]="['/workshop']"
     >
       <GridLayout rows="auto,auto,auto" class="label-grid-inside">
         <Image
@@ -143,7 +143,7 @@
       class="label-grid white-opacity-bg"
       row="3"
       col="0"
-      (tap)="onNavItemTap('/poster')"
+      [nsRouterLink]="['/poster']"
     >
       <GridLayout rows="auto,auto" class="label-grid-inside">
         <Image
@@ -167,7 +167,7 @@
       class="label-grid white-opacity-bg"
       row="3"
       col="1"
-      (tap)="onNavItemTap('/about')"
+      [nsRouterLink]="['/about']"
     >
       <GridLayout rows="auto,auto" class="label-grid-inside">
         <Image
