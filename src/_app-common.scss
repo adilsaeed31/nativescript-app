@@ -66,6 +66,9 @@ $sidedrawer-list-icon-size: 20;
         font-weight: bold;
         font-family: "Exo-Regular";
         font-size: 14px;
+        &:highlighted {
+          background-color: red;
+        }
       }
       .fa {
         width: $sidedrawer-list-icon-size;

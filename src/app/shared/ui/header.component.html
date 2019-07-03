@@ -16,4 +16,9 @@
     class="action-bar-title action-bar-title-normal"
     [text]="headerTitle"
   ></Label>
+  <ActionItem
+    icon="res://search"
+    (tap)="onSearchActionTap()"
+    ios.position="right"
+  ></ActionItem>
 </ActionBar>
