@@ -1,18 +1,10 @@
-<ActionBar
-  class="action-bar action-bar-white-bg  p-t-30"
-  androidElevation="0"
-  (loaded)="onLoadedActionBar()"
->
+<ActionBar class="action-bar action-bar-white-bg  p-t-30" androidElevation="0">
   <NavigationButton
     ios:visibility="collapsed"
     icon="res://menu_black"
     (tap)="onDrawerButtonTap()"
   ></NavigationButton>
-  <NavigationButton
-    text="Back"
-    android.systemIcon="ic_menu_back"
-    [nsLinkRouter]="['/home']"
-  >
+  <NavigationButton *ngIf="canGoBack" (tap)="onGoBack()" icon="res://back">
   </NavigationButton>
   <ActionItem
     icon="res://navigation/menu"

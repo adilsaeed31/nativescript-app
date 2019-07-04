@@ -1,3 +1,15 @@
 <pc-header-bar title="About"></pc-header-bar>
 
-<GridLayout class="page page-content"> </GridLayout>
+<GridLayout class="page page-content" *ngIf="showSearchBar">
+  <StackLayout>
+    <SearchBar
+      hint="PHCC Search"
+      [text]="About"
+      (textChange)="onTextChanged($event)"
+      (submit)="onSubmit($event)"
+      color="#4a4a4a"
+      textFieldBackgroundColor="white"
+      textFieldHintColor="#4a4a4a"
+    ></SearchBar>
+  </StackLayout>
+</GridLayout>
