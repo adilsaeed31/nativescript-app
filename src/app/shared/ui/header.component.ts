@@ -6,7 +6,6 @@ import { RouterExtensions } from "nativescript-angular/router"
 import { Page } from "tns-core-modules/ui/page/page"
 
 // It's globally android variable by nativescript so telling to typescript for usage
-declare var android: any
 @Component({
     selector: "pc-header-bar",
     templateUrl: "./header.component.html",

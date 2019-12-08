@@ -4,7 +4,12 @@ Learn more about the RadSideDrawer UI component and how it can be customized in 
 https://docs.nativescript.org/angular/ui/professional-ui-components/ng-SideDrawer/getting-started
 -->
 <RadSideDrawer [drawerTransition]="sideDrawerTransition">
-  <GridLayout tkDrawerContent rows="auto, *" class="sidedrawer">
+  <GridLayout
+    tkDrawerContent
+    rows="auto, *"
+    class="sidedrawer"
+    textAlignment="right"
+  >
     <StackLayout row="0" class="sidedrawer-header-custom p-l-20 p-b-10">
       <GridLayout rows="auto, *">
         <Label
